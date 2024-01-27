@@ -1,1 +1,181 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neha Maddali</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Neha Maddali</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Neha Maddali</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Neha Maddali profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Neha Maddali</h1>
+        <p class="section__text__p2">Computer Science and Data Science</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/neha-maddali/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/nmaddali03'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Science in Computer Science and Data Science</p>
+              <p>Iowa State University, Graduation May 2024</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              With a strong foundation in algorithms, machine learning, and data
+              analysis, I thrive on turning complex challenges into innovative
+              solutions. My journey extends beyond the classroom, as I've honed
+              my skills through internships at renowned organizations such as
+              Securian Financial and Service Management Group. These experiences
+              have not only equipped me with technical proficiency in languages
+              like Java, Python, and R but have also allowed me to apply my
+              knowledge to real-world projects. My leadership experiences have
+              helped me develop effective communication and leadership skills.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
+    </section>
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">
+              Securian Financial, Software Engineer Intern
+            </h2>
+            <h3>June - Aug 2023</h3>
+            <br />
+
+            <div class="article-container">
+              <p>
+                Enhanced Tsys Servicing web app to manage exceptions/transaction
+                status for Tsys Credit Card data exchange utilizing Java, and
+                RESTful APIs. Optimized CIBC Payment Protector Insurance,
+                reducing credit card payment burdens during insurable events.
+                Facilitated the migration of FIG clients connecting to the MFT
+                server to AWS by leveraging Cloud Concepts.
+              </p>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">
+              Service Management Group, Data Science Intern
+            </h2>
+            <h3>May - Aug 2022</h3>
+            <br />
+            <div class="article-container">
+              <p>
+                Developed researcher friendly analytical tool and methodology
+                using client’s customer survey data to make ROI predictions with
+                Python, Pandas & Streamlit. Utilized LightGBM framework and SHAP
+                machine learning methods to explain the output of models and
+                provide local and global focus areas for clients.
+              </p>
+            </div>
+          </div> 
+        </div>
+
+        
+      </div>
+      
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
+    </section>
+
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:nmaddali@iastate.edu">nmaddalii@iastate.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/neha-maddali/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
